@@ -11,7 +11,6 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'LazyPrincess')
 API_ID = int(environ.get('API_ID', '10389378'))
 API_HASH = environ.get('API_HASH', 'cdd5c820cb6abeecaef38e2bb8db4860')
 BOT_TOKEN = environ.get('BOT_TOKEN', "5797063141:AAGuIkWScl9P8duULF5OzAqTOdHtPhCsfTQ")
@@ -35,7 +34,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://akash:jisir@cluster0.capiwrh.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://akash:haoji@cluster0.capiwrh.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
